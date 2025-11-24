@@ -1,3 +1,4 @@
-lambda/create-data-dynamo/*
-!lambda/create-data-dynamo/lambda_function.py
-!lambda/create-data-dynamo/requirements.txt
+*.venv/
+lambda/add-data-dynamo/*
+!lambda/add-data-dynamo/lambda_function.py
+!lambda/add-data-dynamo/requirements.txt
