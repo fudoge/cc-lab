@@ -1,0 +1,3 @@
+lambda/create-data-dynamo/*
+!lambda/create-data-dynamo/lambda_function.py
+!lambda/create-data-dynamo/requirements.txt
