@@ -1,4 +1,10 @@
+.DS_Store
+.vscode
 *.venv/
+lambda/*/*/__pycache__/*
 lambda/add-data-dynamo/*
 !lambda/add-data-dynamo/lambda_function.py
 !lambda/add-data-dynamo/requirements.txt
+lambda/query-geo-data/*
+!lambda/query-geo-data/lambda_function.py
+!lambda/query-geo-data/requirements.txt

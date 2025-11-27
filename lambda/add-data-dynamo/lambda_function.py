@@ -7,10 +7,10 @@ import io
 
 s3 = boto3.client('s3')
 dynamodb = boto3.client('dynamodb', region_name='ap-northeast-2') 
+config = dynamodbgeo.GeoDataManagerConfiguration(dynamodb, 'geo_test_8')
 
 def lambda_handler(event, context):
     # create connection
-    config = dynamodbgeo.GeoDataManagerConfiguration(dynamodb, 'geo_test_8')
     geoDataManager = dynamodbgeo.GeoDataManager(config)
     
     # get s3 info
