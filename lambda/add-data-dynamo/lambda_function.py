@@ -31,9 +31,9 @@ def lambda_handler(event, context):
         lon = row.get("longitude", "")
         
         item_data = {
-            "restroom_name": {"S": name},
-            "phone_number": {"S": phone},
-            "open_time": {"S": open_time}
+            "restroomName": {"S": name},
+            "phoneNumber": {"S": phone},
+            "openTime": {"S": open_time}
         }
         
         PutItemInput = {
