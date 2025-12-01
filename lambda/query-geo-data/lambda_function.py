@@ -1,6 +1,7 @@
 import dynamodbgeo
 import boto3
 import json
+import os
 
 
 s3 = boto3.client('s3')
@@ -25,5 +26,5 @@ def lambda_handler(event, conetxt):
         'headers': {
             "Access-Control-Allow-Origin": "*"
         },
-        'body': json.dumps({"result": query_reduis_result})
+        'body': json.dumps({"result": query_reduis_result, "datafrom": os.environ.get('AWS_REGION')})
     }
